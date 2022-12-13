@@ -3,6 +3,7 @@ import { AppService } from './app.service';
 
 @Controller()
 export class AppController {
+  // inversing of dependency
   constructor(private readonly appService: AppService) {}
 
   @Get()
