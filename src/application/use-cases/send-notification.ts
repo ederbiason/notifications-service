@@ -1,5 +1,6 @@
 /* eslint-disable prettier/prettier */
 
+import { Injectable } from "@nestjs/common";
 import { Content } from "../entities/content";
 import { Notification } from "../entities/notification";
 import { NotificationsRepository } from "../repositories/notification-repository";
@@ -14,6 +15,7 @@ interface SendNotificationResponse {
     notification: Notification
 }
 
+@Injectable()
 export class SendNotification {
     constructor(private notificationsRepository: NotificationsRepository) {
 

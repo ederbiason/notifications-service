@@ -24,6 +24,10 @@ export class Notification {
         };
     }
 
+    public get id() {
+        return this._id
+    }
+
     public set content(content: Content) {
         this.props.content = content;
     }
