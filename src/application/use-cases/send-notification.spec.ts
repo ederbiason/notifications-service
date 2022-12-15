@@ -1,6 +1,6 @@
 /* eslint-disable prettier/prettier */
 
-import { InMemoryNotificationsRepository } from "../../../test/repositories/in-memory-notifications-repository"
+import { InMemoryNotificationsRepository } from "@test/repositories/in-memory-notifications-repository"
 import { SendNotification } from "./send-notification"
 
 describe('Send notification', () => {
